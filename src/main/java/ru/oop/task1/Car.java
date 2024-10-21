@@ -5,9 +5,9 @@ package ru.oop.task1;
  */
 public class Car {
     /**
-     * Проехать до указанного места из текущего местоположения
-     * @param person
-     * @param destination
+     * Довезти человека до указанного места из текущего местоположения
+     * @param person человек
+     * @param destination место назначения
      */
     void drive(Person person, Position destination){
 
