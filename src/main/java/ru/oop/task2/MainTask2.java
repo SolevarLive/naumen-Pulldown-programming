@@ -30,7 +30,7 @@ public class MainTask2 {
      */
     public void moveTo(Person person, Position destination, Transport transport) {
         person.board(transport);
-        transport.drive(destination);
+        transport.drive(destination,person);
         if (!person.getPosition().equals(destination))
             person.walk(destination);
         assert person.getPosition().equals(destination);
