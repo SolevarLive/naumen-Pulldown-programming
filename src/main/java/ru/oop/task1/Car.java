@@ -1,7 +1,7 @@
 package ru.oop.task1;
 
 /**
- * Транспорт
+ * Машина
  */
 public class Car {
     /**

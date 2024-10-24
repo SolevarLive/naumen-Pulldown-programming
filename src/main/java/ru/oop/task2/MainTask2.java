@@ -29,7 +29,8 @@ public class MainTask2 {
      * @see Position
      */
     public void moveTo(Person person, Position destination, Transport transport) {
-        person.board(transport);
+        if(! transport.getPosition().equals(person.getPosition()))
+            person.walk(transport.getPosition());
         transport.drive(destination,person);
         if (!person.getPosition().equals(destination))
             person.walk(destination);

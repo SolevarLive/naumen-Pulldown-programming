@@ -1,7 +1,7 @@
 package ru.oop.task2;
 
 /**
- *  Различные виды транспорта.
+ *  Транспорт.
  */
 interface Transport extends Positioned {
 

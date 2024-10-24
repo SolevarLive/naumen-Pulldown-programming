@@ -28,7 +28,8 @@ public class MainTask3 {
      */
     public void moveTO(Person person, Position destination, List<Transport> transports) {
         for (Transport transport : transports) {
-            person.board(transport);
+            if(! transport.getPosition().equals(person.getPosition()))
+                person.walk(transport.getPosition());
             transport.drive(destination, person);
             if (person.getPosition().equals(destination))
                 break;
